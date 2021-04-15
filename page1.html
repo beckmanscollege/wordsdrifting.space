@@ -1,0 +1,287 @@
+<HTML>
+  <HEAD>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <link rel="stylesheet" type="text/css" href="page1.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/4a24899e94d8236f671c1090cd9e068c?family=Canela" rel="stylesheet" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Cormorant' rel='stylesheet'>
+    <script src="grained.min.js"></script>   
+    <script defer src="scripts.js"></script>
+
+  <TITLE>content page</TITLE>
+
+  </HEAD>
+  
+  <BODY 
+
+  onload="moveIt()" link="Red" vlink="Red" alink="Red">
+ <div id= "background">
+  <table  cellspacing="10px" cellpadding="10px" border=0 visibility="collapse";>
+  <tr>
+  <td width="40">&nbsp;
+  
+  </td>
+      <td align=center> 
+      <a href="#" onclick="start();"  class="kommando"><B>Spacea ur</B></a>&nbsp;&nbsp; 
+        <a href="#" onclick="stop();" class="kommando"><B>Pausa</B></a>&nbsp;&nbsp; 
+      <a href="javascript: window.location.reload()" class="kommando"><B>Återställ</B></a>
+      <a href="#" onclick="();" class="kommando"><B>Ny text</B></a>&nbsp;&nbsp; 
+    </td>
+  </tr>
+  </table>
+  <div class="flier"><img width="700" height="588"  img-src="https://cdn.glitch.com/c240a166-f3db-4f6c-9467-ea97b0c6754a%2Fcirkel.png?v=1618440603792"/></div> 
+ 
+
+ 
+    <div class='grained'></div>
+   
+  <div id="OTROLIG" class="j" style="top:60px; left:750px;">
+  OTROLIG
+  </div>
+  
+  <div id="TEXT" class="j" style="top:60px; left:846px;">
+  TEXT
+  </div>
+  
+  <div id="Det" class="j" style="top:100px; left:750px;">
+  Det
+  </div>
+  
+  <div id="ska" class="j" style="top:100px; left:786px;">
+  ska
+  </div>
+  
+  <div id="det2" class="j" style="top:100px; left:823px;">
+  det
+  </div>
+  
+  <div id="stå" class="j" style="top:100px; left:858px;">
+  stå
+  </div>
+  
+  <div id="här" class="j" style="top:100px; left:889px;">
+  här
+  </div>
+  
+  <div id="." class="j" style="top:100px; left:918px;">
+  .
+  </div>
+  
+  <div id="Väldigt" class="j" style="top:130px; left:750px;">
+    Väldigt
+  </div>
+  
+  <div id="intressant" class="j" style="top:130px; left:818px;">
+  intressant
+  </div>
+  
+  <div id="minsann" class="j" style="top:130px; left:910px;">
+  minsann
+  </div>
+  
+  <div id="!" class="j" style="top:130px; left:986px;">
+  !
+  </div>
+  
+  <div id="Det3" class="j" style="top:160px; left:750px;">
+    Det
+  </div>
+  
+  <div id="kan" class="j" style="top:160px; left:788px;">
+  kan
+  </div>
+  
+  <div id="du" class="j" style="top:160px; left:826px;">
+  du
+  </div>
+  
+  <div id="ge" class="j" style="top:160px; left:855px;">
+  ge
+  </div>
+  
+  <div id="dig" class="j" style="top:160px; left:883px;">
+  dig
+  </div>
+  
+  <div id="på" class="j" style="top:160px; left:915px;">
+  på
+  </div>
+  
+  <div id=".2" class="j" style="top:160px; left:940px;">
+  .
+  </div>
+  
+  <div id="Men" class="j" style="top:190px; left:750px;">
+  Men
+  </div>
+  
+  <div id="vad2" class="j" style="top:190px; left:794px;">
+  vad
+  </div>
+  
+  <div id="," class="j" style="top:190px; left:827px;">
+  ,
+  </div>
+  
+  <div id="Det4" class="j" style="top:220px; left:750px;">
+  Det
+  </div>
+  
+  <div id="kan2" class="j" style="top:220px; left:788px;">
+  kan
+  </div>
+  
+  <div id="jag" class="j" style="top:220px; left:826px;">
+  jag
+  </div>
+  
+  <div id="inte" class="j" style="top:220px; left:858px;">
+  inte
+  </div>
+  
+  <div id="avslöja" class="j" style="top:220px; left:897px;">
+  avslöja
+  </div>
+  
+  <div id="ännu" class="j" style="top:220px; left:966px;">
+  ännu
+  </div>
+  
+  <div id="!2" class="j" style="top:220px; left:1012px;">
+  !
+  </div>
+  
+  <div id="!3" class="j" style="top:220px; left:1018px;">
+  !
+  </div>
+</div>
+
+
+  </BODY>
+  </HTML>
+
+
+
+
+
+
+  <script language="javascript">
+
+ 
+  // När doit=0, är ord stilla .
+  var doit= 0;
+  
+  function start() {
+    // När doit=1, rör sig ord.
+    doit = 1;
+  }
+  
+  function stop() {
+    doit = 0;
+  }
+  
+  function reload() {
+    //laddar om fönster.
+    window.location.reload(false);
+  }
+  
+  function moveIt() {
+    
+    // laddar när sidan laddas (se body) 
+    // kör konstant när sidan är laddad med setTimeout funktionen (nedan), vilket ger en 20 millisekunders fördröjning mellan 
+    // varje call to function
+
+    moveMe(document.getElementById('OTROLIG').style, 2, 2);
+    moveMe(document.getElementById('TEXT').style, -3, 2);
+    moveMe(document.getElementById('Det').style, 4, 1);
+    moveMe(document.getElementById('ska').style, 5, 4);
+    moveMe(document.getElementById('det2').style, -3, 3);
+    moveMe(document.getElementById('stå').style, -2, 2);
+    moveMe(document.getElementById('här').style, 4, 4);
+    moveMe(document.getElementById('.').style, -4, 1);
+    moveMe(document.getElementById('Väldigt').style, 3, 3);
+    moveMe(document.getElementById('intressant').style, 5, 2); 
+    moveMe(document.getElementById('minsann').style, 2, 3); 
+    moveMe(document.getElementById('!').style, 4, 5); 
+    moveMe(document.getElementById('Det3').style, 1, 2); 
+    moveMe(document.getElementById('kan').style, 3, 3); 
+    moveMe(document.getElementById('du').style, 1, 2); 
+    moveMe(document.getElementById('ge').style, 4, 2); 
+    moveMe(document.getElementById('dig').style, 5, 5); 
+    moveMe(document.getElementById('på').style, 3, 2); 
+    moveMe(document.getElementById('.2').style, 1, 4); 
+    moveMe(document.getElementById('Men').style, -2, 4); 
+    moveMe(document.getElementById('vad2').style, 3, 2);
+    moveMe(document.getElementById(',').style, 2, 2); 
+    moveMe(document.getElementById('Det4').style, 4, 1); 
+    moveMe(document.getElementById('kan2').style, -2, 3); 
+    moveMe(document.getElementById('jag').style, 3, 1); 
+    moveMe(document.getElementById('inte').style, 1, 1); 
+    moveMe(document.getElementById('avslöja').style, 2, 1); 
+    moveMe(document.getElementById('ännu').style, 2, 3); 
+    moveMe(document.getElementById('!2').style, 4, 5); 
+    moveMe(document.getElementById('!3').style, 2, 3); 
+   
+    setTimeout(moveIt, 20);
+  }
+  // 20 är antalet milisekunder, ändra för snabbare eller långsammare rörelse av ord
+
+
+  function moveMe(aword, x, y) {
+
+    // genererar rörelsen för text IE 4+.
+    // Math.random function genererar ett slumpat nummer mellan 0 och 1
+    awordx=Math.random();
+    awordy=Math.random();
+
+    // om x är mindre än 0.5 rör sig ordet till vänster med "doit" pixlar
+    if (awordx <= 0.5) {
+      aword.left = parseInt(aword.left) - doit + 'px';
+    }
+    else {
+      
+      // om x är större än 0.5 rör sig ordet åt höger med x*doit pixlar
+      aword.left = parseInt(aword.left) + x*doit + 'px';
+    }
+    if (aword.left < 0.5) {
+      // // om x är större än 0.5 rör sig ordet åt vänster med x*doit pixlar
+      aword.left = '10px';
+    }
+    if (awordy <= 0.5) {
+      // samma logik för rörelse av ord på y-axeln
+      aword.top = parseInt(aword.top) - doit + 'px';
+    }
+    else {
+      aword.top = parseInt(aword.top) + y*doit + 'px';
+    }
+    if (aword.top < 0) {
+      aword.top = '8px';
+    } 
+  }
+ 
+  </script>
+
+  <!--
+Each of the div tags holds one word of the poem. OK it's a poem. Note that the Javascript references the ID tag
+of each div. This is the way you get a handle on the div objects, through their ID.  Note that the class j is
+defined up at the top of the file as a style. The style information that accompanies each div object has to be
+unique to that object, at least to start out with, because it determines the position of the word. I'm using
+absolute positioning, which means that 0,0 is at top left of the viewable screen.
+
+This piece was written, in part, in response to the questions about text and poetry that the new medium prompts 
+in me. I wanted the text of Seattle Drift to initially look like plain ordinary text so that the contrast is 
+more apparent. The questions that I have about text and poetry prompted by the new medium are similar in fashion 
+to those prompted by abstract art about art and representation. Both prompt, rather than raise the questions 
+directly. 
+
+Seattle Drift was also inspired by Seattle's own California girl Anne, who knows who she is.
+
+Stylistically, the piece is similar to the pop-up poems (though not in behavior) in that the text talks about
+itself. I like this approach because it focusses attention on the questions and also allows me to develop character. 
+The character is the text itself, and the character commenting on its own nature and behavior, though embodying 
+that nature and behavior also, beyond it but within it, like the rest of us.
+
+And this neath text, what is it? It isn't a footnote, but another representation of the text. Some will read 
+this neath text more carefully than the other representation. 
+ -->

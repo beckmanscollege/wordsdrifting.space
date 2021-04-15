@@ -1,0 +1,150 @@
+@import url(//db.onlinewebfonts.com/c/4a24899e94d8236f671c1090cd9e068c?family=Canela);
+
+@font-face {font-family: "Canela"; src: url("//db.onlinewebfonts.com/t/4a24899e94d8236f671c1090cd9e068c.eot"); src: url("//db.onlinewebfonts.com/t/4a24899e94d8236f671c1090cd9e068c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4a24899e94d8236f671c1090cd9e068c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4a24899e94d8236f671c1090cd9e068c.woff") format("woff"), url("//db.onlinewebfonts.com/t/4a24899e94d8236f671c1090cd9e068c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4a24899e94d8236f671c1090cd9e068c.svg#Canela") format("svg"); }
+*{
+  margin:0;
+  padding:0;
+  cursor: url('https://i.stack.imgur.com/8ka1W.png'), auto;
+} 
+
+body{
+  background-color: #e4373b;
+
+}
+  
+
+ }
+
+
+  .flier {
+    pointer-events: none;
+    background-image: url('https://i.stack.imgur.com/8ka1W.png')
+  }
+  
+  .flier * {
+  
+          animation: fly 50s linear infinite;
+          pointer-events: none !important;
+    top: 0;
+    left: 0;
+    transform: translateX(-120%) translateY(-120%) rotateZ(0);
+    position: fixed;
+    animation-delay: 1s;
+    z-index: 10;
+  }
+  
+  
+  @keyframes fly {
+  
+    98.001%, 0% {
+                  display: block;
+      transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+    }
+  
+    15% {
+      transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+    }
+  
+    15.001%, 18% {
+      transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+    }
+  
+    40% {
+      transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+    }
+  
+    40.001%, 43% {
+      transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+    }
+  
+    65% {
+      transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+    }
+  
+    65.001%, 68% {
+      transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+    }
+  
+    95% {
+      transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+    }
+  }
+  
+  
+
+
+
+
+
+
+
+
+/* Flygande ord */
+.j	{ 
+  
+  font-size: 17pt;
+  font-family: 'Cormorant', serif;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: left;
+  color: White;
+  line-height: 120%;
+  position: absolute;
+}
+  #OTROLIG {
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay:10s;
+  animation-iteration-count:infinite;
+  z-index: 10;
+}
+@keyframes example {
+  from {color: rgb(224, 127, 127);}
+  to {color: rgb(82, 73, 216);}
+}
+ /* body */
+b	  { 
+  font-size: 14pt;
+  font-family: 'canela', serif;
+  font-weight: bold;
+  text-decoration: none;		
+
+  
+}
+table{
+position:fixed;
+top: 0;
+z-index: 1;
+text-align:center;
+display:flex;
+width:100%;
+height: 60px;
+background: rgba(0, 0,0,0.)
+
+}
+.kommando {
+  width: 180px;
+padding: 18px;
+margin: 20px;
+  text-decoration: none;
+  FONT-WEIGHT: bold; 
+  FONT-SIZE: 14pt; 
+  LINE-HEIGHT:1.5;
+  Z-INDEX: 1000; 
+  VISIBILITY: visible; 
+  COLOR: rgb(0, 0, 0); 
+  TEXT-DECORATION: none;
+  transition: ease-out 0.3s;
+}
+.kommando:hover {
+  color:#ccc
+}
+
+#background{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow:auto;
+ }
+  
+ 
